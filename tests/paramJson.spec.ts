@@ -10,7 +10,7 @@ const searchItems:any = JSON.parse(fs.readFileSync(testdata, 'utf-8'));
 test.describe('Search test for', async() => {
     for (const {item} of searchItems) {
 
-        test(`validate search ${item}`, async ({ page }) => {
+        test(`validate search all 4 items ${item}`, async ({ page }) => {
             await page.goto('https://demowebshop.tricentis.com/');
             // await page.pause();
             // await page.locator('[class="search-box-text ui-autocomplete-input"]').fill(item);
